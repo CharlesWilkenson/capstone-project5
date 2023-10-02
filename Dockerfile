@@ -7,7 +7,7 @@ WORKDIR /app
  
 
 # Copy all files in the current directory to /app in the container
-COPY . .
+COPY . /app/
 
  
 
