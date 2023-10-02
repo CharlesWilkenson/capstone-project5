@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  lint:
     docker:
       - image: python:3.8.0
 
@@ -34,7 +34,6 @@ jobs:
             make lint 
 
 workflows:
-  version: 2
-  build-deploy:
+  default:
     jobs:    
      - lint        
