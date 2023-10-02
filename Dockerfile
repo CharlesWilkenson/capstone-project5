@@ -4,8 +4,7 @@ WORKDIR /app
 
 COPY app.py requirements.txt /app/
 
-RUN pip install --upgrade pip &&\
-    pip install --trusted-host pypi.python.org -r requirements.txt
+RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 80
 
