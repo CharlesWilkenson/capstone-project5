@@ -1,11 +1,11 @@
-FROM python:3.9
+FROM python:3.7.3-stretch
 
 WORKDIR /app
 
-COPY app.py requirements.txt /app/
+COPY requirements.txt app.py /app/
 
 RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 80
 
-CMD ["python", "app.py"]
+CMD [ "python", "app.py" ]
