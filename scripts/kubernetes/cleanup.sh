@@ -1,5 +1,5 @@
 #! /bin/bash
-DEPLOYMENT_NAME=devoops-capstone
+DEPLOYMENT_NAME=udapeople-devops 
 kubectl delete services ${DEPLOYMENT_NAME}
 
 echo "Deleting deployment ${DEPLOYMENT_NAME}"
